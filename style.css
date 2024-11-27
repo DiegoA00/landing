@@ -23,40 +23,40 @@ CSS STRUCTURE:
 
 --------------------------------------------------------------*/
 body {
-  --heading-font: "Marcellus", Roboto, sans-serif;
-  --heading-font-weight: 400;
-  --heading-color: #111;
-  --heading-line-height: 1.24;
+  --heading-font: "Roboto", sans-serif;
+  --heading-font-weight: 700;
+  --heading-color: #333;
+  --heading-line-height: 1.2;
 
-  --swiper-theme-color: #8C907E;
+  --swiper-theme-color: #FF4500;
 
   /* bootstrap */
-  --bs-body-font-family: "Jost", Roboto, sans-serif;
-  --bs-body-font-size: 18px;
+  --bs-body-font-family: "Roboto", sans-serif;
+  --bs-body-font-size: 16px;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
-  --bs-body-color: #8f8f8f;
-  --bs-body-color-rgb: 143, 143, 143;
+  --bs-body-line-height: 1.6;
+  --bs-body-color: #666;
+  --bs-body-color-rgb: 102, 102, 102;
 
-  --bs-primary: #8C907E;
-  --bs-secondary: #6c757d;
-  --bs-black: #111;
-  --bs-light: #F1F1F0;
-  --bs-dark: #212529;
-  --bs-gray: #9aa1a7;
-  --bs-gray-dark: #51565b;
+  --bs-primary: #FF4500;
+  --bs-secondary: #333;
+  --bs-black: #000;
+  --bs-light: #f4f4f4;
+  --bs-dark: #222;
+  --bs-gray: #888;
+  --bs-gray-dark: #555;
 
-  --bs-primary-rgb: 140, 144, 126;
-  --bs-secondary-rgb: 108, 117, 125;
-  --bs-black-rgb: 17, 17, 17;
-  --bs-light-rgb: 241, 241, 240;
-  --bs-dark-rgb: 33, 37, 41;
+  --bs-primary-rgb: 255, 69, 0;
+  --bs-secondary-rgb: 51, 51, 51;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-light-rgb: 244, 244, 244;
+  --bs-dark-rgb: 34, 34, 34;
 
-  --bs-link-color: #111;
-  --bs-link-color-rgb: 17, 17, 17;
-  --bs-link-decoration: underline;
-  --bs-link-hover-color: #111;
-  --bs-link-hover-color-rgb: 17, 17, 17;
+  --bs-link-color: #FF4500;
+  --bs-link-color-rgb: 255, 69, 0;
+  --bs-link-decoration: none;
+  --bs-link-hover-color: #FF6347;
+  --bs-link-hover-color-rgb: 255, 99, 71;
 }
 
 body {
