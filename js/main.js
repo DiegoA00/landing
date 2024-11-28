@@ -94,26 +94,31 @@ let loaded = () => {
 
     myform.addEventListener('submit', eventSubmit => {
         eventSubmit.preventDefault();
-        const emailElement = document.querySelector('.form-control-lg');
-        const emailText = emailElement.value;
-        if (emailText.length == 0) {
-            emailElement.focus();
-            emailElement.animate(
-                [
-                    { transform: "translateX(0)" },
-                    { transform: "translateX(50px)" },
-                    { transform: "translateX(-50px)" },
-                    { transform: "translateX(0)" },
-                ],
-                {
-                    duration: 100,
-                    easing: "linear",
-                }
-            );
-            return;
-        }
+        let isValid = true;
+        const formElements = myform.querySelectorAll('.form-control-lg');
 
-        sendData();
+        formElements.forEach(element => {
+            if (element.value.trim().length === 0) {
+                isValid = false;
+                element.focus();
+                element.animate(
+                    [
+                        { transform: "translateX(0)" },
+                        { transform: "translateX(50px)" },
+                        { transform: "translateX(-50px)" },
+                        { transform: "translateX(0)" },
+                    ],
+                    {
+                        duration: 100,
+                        easing: "linear",
+                    }
+                );
+            }
+        });
+
+        if (isValid) {
+            sendData();
+        }
     });
 }
 
